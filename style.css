@@ -1,0 +1,135 @@
+@import url("css/home.css");
+@import url("css/aboute.css");
+@import url("css/services.css");
+@import url("css/fact.css");
+@import url("css/portfolio.css");
+@import url("css/blog.css");
+@import url("css/contact.css");
+@import url("css/preloader.css");
+@import url("css/slider.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    width:100%;
+    height: 100%;
+    background:#FFFFFF;
+    overflow-x: hidden;
+  }
+
+  /* === footer Section === */
+  .footer{
+    position: relative;
+   /* width: 100%;
+    height:auto; 
+    background:linear-gradient(-125deg, #000000, #25292be0);*/
+    background: #1a1a1a;
+  }
+
+  .footer-text p {
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
+   /* color: #fff;*/
+    font-weight: 200;
+    letter-spacing: 1px;   
+    margin: 0;
+    opacity: 0.8;
+    color:#999999; 
+  }
+
+  .footer-text{
+    background: #1a1a1a;
+    padding: 30px 0;
+    text-align: left;
+  }
+
+  .footer-span{
+    opacity: 1;
+    font-weight: 600;
+    color: #fff;
+  }
+    /* .container{
+    max-width: 1170px !important ;
+  }*/
+
+  .ft:after{
+    font-family: 'icofont';
+    content: "\ed37";
+    color: #fff;
+  }
+
+  .footer-social{
+    text-align: right;
+    padding: 27px 0;
+  }
+
+  .fa-facebook:before{
+    content: "\f39e";
+  }
+
+  .fa-twitter:before{
+    content: "\f099";
+  }
+
+  .fa-behance:before{
+    content: "\f1b4";
+  }
+
+
+  .footer-social a{
+    color:#999999;   
+    font-size: 14px; 
+    margin-right: 25px;
+    display: inline-block;
+
+    transition:all 0.1s linear;
+    -moz-transition:all  0.1s  linear;
+    -webkit-transition:all 0.1s linear;
+    -o-transition:all  0.1s linear;
+  }
+
+  .footer-social a:hover {
+    color:#00EAFF;
+  }
+
+  .footer-social a:last-child{
+    margin-right: 0px;
+  }
+
+   /*  Большие девайсы (десктопы, >= 992px)*/
+   @media (min-width: 768px) and (max-width: 991.98px) { 
+    .footer-text{
+      text-align: center;
+      padding-bottom: 0;
+     }
+     .footer-social{
+      text-align: center;
+     }
+        
+    
+  }
+  
+  /*  Средние девайсы («таблетки», >= 768px)*/
+  @media (min-width: 576px) and (max-width: 767.98px)  { 
+    .footer-text{
+      text-align: center;
+      padding-bottom: 0;
+     }
+     .footer-social{
+      text-align: center;
+     }
+          
+  }
+  
+  /*  Малые девайсы («ландшафтные телефоны», >= 576px)*/
+  @media (max-width: 575.98px)  { 
+    .footer-text{
+      text-align: center;
+      padding-bottom: 0;
+     }
+     .footer-social{
+      text-align: center;
+     }
+  }

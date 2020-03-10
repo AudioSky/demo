@@ -1,0 +1,170 @@
+.services{
+    background: #212331;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .header-services{
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+
+  .header-services h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: center;
+     margin: auto;
+   /* text-transform: uppercase; */
+    letter-spacing: 3px;
+    margin-bottom: 10px;  
+    font-size: 50px;
+    font-weight: 800;
+     letter-spacing: -1px;
+  }
+
+  .header-services p {
+    font-size: 15px;
+    font-family: 'Raleway',sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+     font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 1px;
+  }   
+  
+  .services-text-g{
+      max-width: 500px;
+      margin: 0 auto;
+   }  
+    
+    .services-a {
+      display: flex;
+      width: 33.33333333%;
+      margin-bottom: 50px;
+      float: left;
+      padding: 0px 15px 0px 15px;
+    }
+    .services-a i{
+      margin-bottom: 20px;
+      display: inline-block;
+      color: #00EAFF;
+      transition:all 0.2s linear;
+      -moz-transition:all  0.2s  linear;
+      -webkit-transition:all 0.2s linear;
+      -o-transition:all  0.2s linear;
+     
+    }
+
+    
+     .services-a:hover  i{
+        color:#ffffff ;
+      }
+
+    .fas fa-pencil-alt:before{
+      content: "\f303";
+    }
+
+    .fas fa-tablet-alt:before{
+      content: "\f3fa";
+    }
+
+    .far fa-images:before{
+      content: "\f302";
+    }
+
+    .fas fa-desktop:before{
+      content: "\f108";
+    }
+
+    .fas fa-layer-group:before{
+      content: "\f5fd";
+    }
+
+    .far fa-lightbulb:before{
+      content: "\f0eb";
+    }
+
+    .font-40px{
+      font-size: 40px;
+    }
+   
+    .pull-left{
+      width: 20%;
+    }
+    .pull-right{
+      
+      width: 80%;
+    }
+    .pull-right h4{
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      color: #ffffff;
+      text-align: left;
+      font-weight: 600;
+      margin: auto;
+         /* text-transform: uppercase; */
+      letter-spacing: 3px;
+       margin-bottom: 10px; 
+       margin-top:5px;
+    }
+    .pull-right p {
+      font-size: 15px;
+      font-family: 'Raleway',sans-serif;
+      color: #d0d0d0;
+      text-align: left;
+      font-weight:400;
+      line-height: 24px;
+      
+      letter-spacing: 1px;
+    }   
+
+ /*  Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+ 
+}
+
+/*  Большие девайсы (десктопы, >= 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .services-a {
+    width: 50%;
+ }
+}
+
+/*  Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px)  { 
+  .services-a {
+    width: 100%;
+ }
+ .services{    
+  padding-top: 80px;
+  padding-bottom: 80px;
+ }
+ .header-services{
+  margin-bottom: 0px;
+ }
+}
+
+/*  Малые девайсы («ландшафтные телефоны», >= 576px)*/
+@media  (max-width: 575.98px)  { 
+  .services-a {
+    width: 100%;
+ }
+  .services{    
+  padding-top: 80px;
+  padding-bottom: 80px;
+ }
+ .header-services{
+  margin-bottom: 0px;
+ }
+
+ .header-services h2{
+  font-size: 42px;
+ }
+ .header-services p {
+  font-size: 13px;
+ }
+}
+
+/*  Экстрамалые девайсы («телефоны», < 576px)
+// Нет @media, т.к. это по умолчанию в Bootstrap

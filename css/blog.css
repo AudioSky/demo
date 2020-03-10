@@ -1,0 +1,178 @@
+.blog{
+    background: #fff;
+    padding-top: 100px;  
+    padding-bottom: 100px;
+  }
+
+ .header-blog{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+.header-blog h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #212331;
+    text-align: center;
+     margin: auto;
+   /* text-transform: uppercase; */
+    letter-spacing: 3px;
+    margin-bottom: 10px;  
+    font-size: 50px;
+    font-weight: 800;
+     letter-spacing: -1px;
+  }
+
+  .header-blog p {
+    font-size: 15px;
+    font-family: 'Raleway',sans-serif;
+    color: #6c757d;
+    text-align: center;
+     font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 1px;
+  }   
+    
+  .blog-text-g{
+    max-width: 500px;
+    margin: 0 auto;
+ }
+
+ .font-100{
+    font-weight: 100;
+ }
+
+ .blog-post{
+   position: relative;
+ }
+ .mt-50{
+    margin-top: 50px;
+ }
+
+ .blog-image{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .blog-image img{
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      background-position: center;
+      text-align: center;
+      max-width: 100%;
+      height: auto;
+      background-size: cover;
+      border-radius: 0%;
+         
+  }
+
+  .data-text{
+    position: absolute;
+    z-index: 999;
+    background-color: #1d2124;
+    display: block;
+    left: 15px;
+    top: 15px;
+    padding: 5px 15px;
+    text-align: center;
+  }
+  
+  .day, .month{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .day{
+    font-family: 'Open Sans',sans-serif;
+  }
+
+  .month{
+    font-family: 'Raleway',sans-serif;
+  }
+
+  .post-text h3{
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: .5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #212331;
+  }
+
+  .post-text p{
+    font-family: 'Raleway',sans-serif;
+    color: #6c757d;
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 3px;
+    line-height: 22px
+  }
+
+  .post-text a{
+  text-decoration: none;
+  font-family: 'Raleway',sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #212331;
+}
+.post-text a:hover{
+  text-decoration: none;
+  color: #212331;
+}
+
+ 
+a.btn-text:after {
+  font-family: 'icofont';
+  content: "\eab8";
+  padding-left: 5px;
+  color: #00BBCC;
+  font-size: 14px;
+}
+
+/*  Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+}
+
+/*  Большие девайсы (десктопы, >= 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+ 
+}
+
+/*  Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px)  { 
+  .blog{    
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .header-blog{
+    margin-bottom: 0px;
+   }
+}
+
+/*  Малые девайсы («ландшафтные телефоны», >= 576px)*/
+@media (max-width: 575.98px)  { 
+  .blog{    
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .header-blog{
+   margin-bottom: 0px;
+  }
+
+  .header-blog h2{
+    font-size: 42px;
+  }
+  .header-blog p {
+    font-size: 13px;
+  }  
+
+}
+
+/*  Экстрамалые девайсы («телефоны», < 576px)
+// Нет @media, т.к. это по умолчанию в Bootstrap
