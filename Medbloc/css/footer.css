@@ -1,0 +1,178 @@
+.footer{
+    position: relative;   
+    padding-top: 136px; 
+    padding-bottom: 53px;   
+    overflow-x: hidden;
+    background: -webkit-linear-gradient(45deg, #1c80df 0%, #7cd1f5 80%, #7cd1f5 100%);
+    background: -o-linear-gradient(45deg, #1c80df 0%, #7cd1f5 80%, #7cd1f5 100%);
+    background: linear-gradient(45deg, #1c80df 0%, #7cd1f5 80%, #7cd1f5 100%);    
+  }
+
+  .logo-text{
+    margin: 0 0 15px;
+    line-height: 22px;
+    font-size: 16px;
+    color:#fff; 
+  }
+  .logo-footer{
+    margin: -10px 0 53px;   
+  }
+
+  .f-heading{
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 0 17px;
+    margin: 0 0 9px;
+    position: relative;
+    font-family: "Montserrat";  
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .f-heading::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    background: #fff;
+    width: 51px;
+    height: 1px;
+    z-index: 0;
+  }
+.list-footer{
+   overflow: hidden;
+   font-size: 15px;
+   padding-left: 0;
+   list-style: none; 
+   margin-bottom: 15px; 
+}
+
+.list-footer li{
+  overflow: hidden;
+    padding: 22px 0 0;
+    color:#fff;
+}  
+.list-footer li a{
+   color:#fff;
+   text-decoration: none;
+   transition:all 0.3s linear;
+   -moz-transition:all  0.3s  linear;
+   -webkit-transition:all 0.3s linear;
+   -o-transition:all  0.3s linear;
+}  
+.list-footer li a:hover{
+  color:#7af2ff;  
+  transition:all 0.3s linear;
+  -moz-transition:all  0.3s  linear;
+  -webkit-transition:all 0.3s linear;
+  -o-transition:all  0.3s linear;
+}  
+.colic{
+  width: 25%;
+  float: left;
+} 
+.footer .social-networks{
+  overflow: hidden;
+    padding: 30px 0 63px;
+    margin: 0;
+}
+ .txt-f{
+  font-family: "Montserrat";  
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.ft-bold{
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition:all 0.3s linear;
+  -moz-transition:all  0.3s  linear;
+  -webkit-transition:all 0.3s linear;
+  -o-transition:all  0.3s linear;
+}
+.ft-bold:hover{
+  color:#7af2ff;  
+  transition:all 0.3s linear;
+  -moz-transition:all  0.3s  linear;
+  -webkit-transition:all 0.3s linear;
+  -o-transition:all  0.3s linear;
+  text-decoration: none;
+}
+
+/*  Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .f-heading{   
+    font-size: 16px;    
+  }
+}
+
+/*  Большие девайсы (десктопы, >= 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .footer{
+    position: relative;   
+    padding-top: 80px; 
+    padding-bottom: 53px;     
+  }
+  .logo-footer{
+    margin: 0 0 20px;   
+  }
+  .logo-text{
+    margin: 0 0 35px;   
+  }
+  .f-heading{   
+    font-size: 16px;    
+  }
+
+}
+
+/*  Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px)  { 
+  .footer{
+    position: relative;   
+    padding-top: 80px; 
+    padding-bottom: 53px;     
+  }
+  .logo-footer{
+    margin: 0 0 20px;   
+  }
+  .logo-text{
+    margin: 0 0 35px;   
+  }
+  .colic{
+    width: 100%;
+    float: left;
+    margin: 0 0 20px;
+  } 
+}
+
+/*  Малые девайсы («ландшафтные телефоны», >= 576px)*/
+@media (max-width: 575.98px)  { 
+  .footer{
+    position: relative;   
+    padding-top: 80px; 
+    padding-bottom: 53px;     
+  }
+  .logo-footer{
+    margin: 0 0 20px;   
+  }
+  .colic{
+    width: 100%;
+    float: left;
+    margin: 0 0 20px;
+  } 
+  .logo-text{
+    margin: 0 0 35px;   
+  }
+  
+}
+
+/*  Экстрамалые девайсы («телефоны», < 576px)
+// Нет @media, т.к. это по умолчанию в Bootstrap

@@ -1,0 +1,184 @@
+  .in{
+    position: relative;
+    background: #fff;
+    padding-top: 63px; 
+    padding-bottom: 67px;  
+    display: block;
+    overflow-x: hidden;
+    
+  }
+    .slider_control {
+      position: absolute;   
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 61px;
+      color: #dddddd;
+      text-align: center;    
+      height: 60px;    
+      top:-159px; 
+      background: #f7f7f7;
+      border-radius: 5px;
+      transition:all 0.3s linear;
+      -moz-transition:all  0.3s  linear;
+      -webkit-transition:all 0.3s linear;
+      -o-transition:all  0.3s linear;
+    }
+    .slider_control_left {
+      right: 65px;
+    }
+    .slider_control_right {
+      right:0;
+    }
+    .slider_but{
+      position: relative;
+    }
+    .slider a:hover{
+      background-color: rgb(34, 144, 255);
+      transition:all 0.3s linear;
+      -moz-transition:all  0.3s  linear;
+      -webkit-transition:all 0.3s linear;
+      -o-transition:all  0.3s linear;
+    }
+    .slider a{
+     margin-right: 15px;
+    }
+    .slider_control_left::after,
+    .slider_control_right::after{     
+      position: absolute;   
+      z-index: -1;
+      left: 0;
+      top: 18px;
+      bottom: 0;
+      right: 0;
+      font: 22px/24px 'Font Awesome 5 Free';
+      font-weight: 900;
+      text-indent: 0;
+      z-index: 0;
+      transition:all 0.3s linear;
+      -moz-transition:all  0.3s  linear;
+      -webkit-transition:all 0.3s linear;
+      -o-transition:all  0.3s linear;
+    }
+    .slider_control_left::after{
+      content: "\f053";
+    }
+    .slider_control_right::after{
+      content: "\f054";
+    }
+    .slider_control_left:hover::after,
+    .slider_control_right:hover::after{     
+     color: rgb(255, 255, 255);
+     transition:all 0.3s linear;
+     -moz-transition:all  0.3s  linear;
+     -webkit-transition:all 0.3s linear;
+     -o-transition:all  0.3s linear;
+    }
+/*===================Slider=======================*/
+.slider{
+ /* position: relative;*/
+  overflow: hidden;
+
+}
+.slider_wrapper {
+  display: flex;
+  transition: transform 2s ease;
+  margin-right: -5vh;
+}
+
+.slider_item {
+  position: relative;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.img-fluider {
+  display: inline-block;
+  height: auto;  
+  width: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition:all 0.3s linear;
+  -moz-transition:all  0.3s  linear;
+  -webkit-transition:all 0.3s linear;
+  -o-transition:all  0.3s linear;
+   padding-right: 5vh;
+}
+
+.img-fluider:hover { 
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  transition:all 0.3s linear;
+  -moz-transition:all  0.3s  linear;
+  -webkit-transition:all 0.3s linear;
+  -o-transition:all  0.3s linear;
+}
+
+/*  Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 1199.98px) { 
+  .slider_item {    
+    flex: 0 0 20%;   
+    max-width: 20%; 
+  }
+}
+/*  Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .slider_item {    
+    flex: 0 0 25%;   
+    max-width: 25%; 
+  }
+}
+
+/*  Большие девайсы (десктопы, >= 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .slider_item {    
+    flex: 0 0 25%;  
+    max-width: 25%; 
+  }
+  .slider_control {     
+    top:-129px;  
+  }
+}
+
+/*  Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px)  { 
+  .slider_item {    
+    flex: 0 0 33.333333333%;
+    max-width: 33.333333333%;   
+  }
+  .slider_control {     
+    top:-119px;  
+    width: 51px;      
+    height: 50px;    
+  }
+  .slider_control_left {
+    right: 55px;
+  }
+  .slider_control_left::after,
+  .slider_control_right::after{  
+    top: 15px;  
+  }
+}
+
+/*  Малые девайсы («ландшафтные телефоны», >= 576px)*/
+@media (max-width: 575.98px)  { 
+  .slider_item {    
+    flex: 0 0 50%;   
+    max-width: 50%;
+  }
+  .slider_control {     
+    top:-119px;  
+    width: 51px;      
+    height: 50px;    
+  }
+  .slider_control_left {
+    right: 55px;
+  }
+  .slider_control_left::after,
+  .slider_control_right::after{  
+    top: 15px;  
+  }
+}
+
+/*  Экстрамалые девайсы («телефоны», < 576px)
+// Нет @media, т.к. это по умолчанию в Bootstrap
+

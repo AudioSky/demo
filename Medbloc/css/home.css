@@ -1,0 +1,673 @@
+ /* === Nav Section === */
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 60px;
+    padding-bottom: 20px;   
+    transition: all 0.5s ease-in-out; 
+    z-index: 9; 
+    
+}
+
+.header::before{
+  content: ""; 
+  opacity: 0;
+  background: linear-gradient(45deg, #1c80df 0%, #7cd1f5 80%, #7cd1f5 100%);
+  height: 90px;
+  position: absolute;
+  width: 100%;
+}
+
+.header-scroll{
+  transition: all 0.25s ease-in-out;   
+  position: fixed; 
+}
+
+.header-scroll::before{
+  content: "";   
+  opacity: 1;
+  transition: all 0.25s ease-in-out;   
+  position: absolute;
+}
+
+/*----logo-----*/
+.logo {
+    float: left;
+    margin: 0;
+    left: 0px;
+    top: 31px;
+    position: absolute;   
+    margin-left: 15px; 
+  }  
+  .logo img {  
+    width:auto;    
+    display:block; 
+     
+   }    
+
+   .logo img.logo-scroll {    
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* === Home Section === */
+  .home{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;      
+    text-align: center;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    min-height: 720px;
+   }
+   .menu {
+    display: block;
+    position: relative;
+    width: 100%; 
+    height: 60px;
+  }
+    
+  .menu ul{    
+     list-style: none;
+     position: relative;
+     float: right;
+     display: inline-table;     
+     top: 39px;
+     right: -25px;
+  }  
+  .menu li{
+   float: left;
+    margin: 0 33px 0 0;
+  }  
+  .menu li a{
+      position: relative;
+      display: inline-block;
+      color: rgb(255, 254, 254);     
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      white-space: nowrap;
+      padding: 0px 5px;        
+       transition:all 0.3s linear;
+      -moz-transition:all  0.3s  linear;
+      -webkit-transition:all 0.3s linear;
+      -o-transition:all  0.3s linear;
+  }  
+  .menu li a:hover  {
+    color:#7af2ff;     
+  }
+  .menu-active{
+    color:#7af2ff!important; 
+  }
+
+  /*==== mobile menu ====*/
+  .menu.mobile-menu{
+    left:0%;
+    opacity:1;
+    transition:all 0.5s linear;
+    -moz-transition:all  0.5s  linear;
+    -webkit-transition:all 0.5s linear;
+    -o-transition:all  0.5s linear;
+  }
+  .menu.show{
+    display: none;
+  }
+  /*---------------------*/
+  .btn-holders{
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    position: relative;
+    text-decoration:none;
+    top: 31px;
+  }
+
+  .btn-holders a {
+    font-weight: 400;
+    color: #fff;
+    transition:all 0.3s linear;
+    -moz-transition:all  0.3s  linear;
+    -webkit-transition:all 0.3s linear;
+    -o-transition:all  0.3s linear;
+  }  
+
+  .hidden-xs:hover  {
+    color:#7af2ff;     
+    text-decoration:none; 
+  }
+
+  .btn-primar{
+    margin: 0 0 0 26px;
+  }
+
+  .btn-primar {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    background: none;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 10px;
+    border-radius: 50px;
+  }
+
+  .btn-primar:hover{
+    text-decoration:none;
+    color: #fff; 
+    background: #7af2ff;
+    border: 0px solid rgba(255, 255, 255, 0.5);
+    padding: 14px 12px;
+    transition:all 0.3s linear;
+    -moz-transition:all  0.3s  linear;
+    -webkit-transition:all 0.3s linear;
+    -o-transition:all  0.3s linear;
+  }
+
+  /* === Home Text === */
+  .home-text{
+    font-family: "Montserrat";  
+    position: relative; 
+    text-align: left;    
+  }
+  .home-text h1 {
+    font-size: 54px;  
+    color: #ffffff;  
+    font-weight: 700;
+    line-height: 1.111;
+    margin: 0 0 36px;       
+  }  
+  .home-text p {
+    font-size: 18px;
+    color: #ffffffe6;
+    font-weight: 300;
+    line-height: 1.556;
+    margin: 0 0 54px;
+    letter-spacing: 1px;
+  }
+
+  .btn-home{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+
+   .btn-download, 
+   .btn-demo{
+    display: inline-block;
+    vertical-align: middle;
+     font-family: 'Montserrat', sans-serif;;    
+     color: #fff; 
+     font-size: 15px;
+     line-height: 17px;
+     font-weight: 600;   
+     border-radius: 50px;  
+     margin: 0 18px 0 0;
+   }
+
+   .btn-download{       
+    background: #7af2ff;
+    border: 0px solid rgba(255, 255, 255, 0.5);
+    padding: 14px 37px; 
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-demo{    
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 24px;    
+    background: none; 
+  }  
+
+  .btn-download:hover,
+  .btn-demo:hover{
+    color: #fff; 
+    transition:all 0.3s linear;
+    -moz-transition:all  0.3s  linear;
+    -webkit-transition:all 0.3s linear;
+    -o-transition:all  0.3s linear;
+    text-decoration:none;
+  }
+  .btn-download:hover{
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 35px; 
+  }
+  .btn-demo:hover{     
+    background: #7af2ff;
+    border: 0px solid rgba(255, 255, 255, 0.5);
+    padding: 14px 26px;    
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* === Home Mac === */
+  .macbook-image{
+    text-align: center;
+    display: grid;
+    position: relative; 
+  }
+  .macbook-image img{
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      background-position: center;
+      text-align: center;
+      max-width: 100%;
+      height: auto;
+      background-size: cover;
+      border-radius: 0%;    
+      position: absolute;  
+  }
+
+  .container-home{
+    position: relative;
+    top: 60%;
+	  transform: translateY(-60%);
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0px 0% 0px 0%;  
+  }
+
+  .macbook-image a {
+     position: relative;
+  }
+
+  .macbook-image a img{
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 5%;
+  }
+
+  img.img-mac{
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    cursor: pointer;
+  }
+
+  img.img-mac {   
+    position: relative;   
+  }
+  
+  /*================= Frame =========================*/
+  .modal-fr {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;    
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .close-frame {
+    color: rgba(228, 228, 228, 0.801);
+    float: right;
+    font-weight: 400;
+    margin: 20px 25px;
+  }
+  
+  .close-frame:hover,
+  .close-frame:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition:all 0.3s linear;
+    -moz-transition:all  0.3s  linear;
+    -webkit-transition:all 0.3s linear;
+    -o-transition:all  0.3s linear;
+  }
+
+  .close-frame::after{
+    font-size: 36px;
+    font-family: 'icofont';
+    content: "\eee1";
+  }
+  
+  .frame-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+   /* padding-bottom: 56.25%;*/
+
+    top: 60%;
+    transform: translateY(-60%);
+    margin: 0 auto;
+    padding: 0px 0% 0px 0%;
+    max-width: 720px;
+    max-height: 480px;
+  }
+  
+  .frame-content iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /*================= Icon Mobile-Menu =========================*/
+.icon-mobile-menu {
+  display:none;
+    width: 40px;
+   height: 35px;
+   border: none;
+   background: rgba(44,44,68,0.0);
+    position:relative;
+   cursor: pointer;
+   margin:15px;
+   left: 18px;
+   border-radius:4px;
+   /*border: 1px solid #000;*/
+   float: right;
+   margin-top: 32px;
+ }
+ 
+ .icon-mobile-menu:focus {
+   outline: none;
+ }
+ .icon-mobile-menu span {
+   width: 30px;
+   height: 2px;
+   left: -2px;
+   border-radius: 100px;
+   background: #fff;
+   position: absolute;
+   margin:8px;
+   
+ }
+ .icon-mobile-menu span:nth-child(1) {
+   top: 0px;
+   -webkit-transition: 0.2s all 0.4s, -webkit-transform 0.2s;
+   transition: 0.2s all 0.4s, -webkit-transform 0.2s;
+   transition: transform 0.2s, 0.2s all 0.4s;
+   transition: transform 0.2s, 0.2s all 0.4s, -webkit-transform 0.2s;
+ }
+ 
+ .icon-mobile-menu span:nth-child(2) {
+   top: 50%;
+   margin-top: -2px;
+   opacity: 1;
+   visibility: visible;
+   -webkit-transition: opacity 0.4s, visibility 0.4s;
+   transition: opacity 0.4s, visibility 0.4s;
+ }
+ .icon-mobile-menu span:nth-child(3) {
+   bottom: 0px;
+   -webkit-transition: 0.2s all 0.4s, -webkit-transform 0.2s;
+   transition: 0.2s all 0.4s, -webkit-transform 0.2s;
+   transition: transform 0.2s, 0.2s all 0.4s;
+   transition: transform 0.2s, 0.2s all 0.4s, -webkit-transform 0.2s;
+ }
+ 
+ .icon-mobile-menu.on span:nth-child(1) {
+   top: 50%;
+   margin-top: -2px;
+   -webkit-transform: rotate(45deg);
+           transform: rotate(45deg);
+   -webkit-transition: all 0.2s, 0.2s -webkit-transform 0.4s;
+   transition: all 0.2s, 0.2s -webkit-transform 0.4s;
+   transition: all 0.2s, 0.2s transform 0.4s;
+   transition: all 0.2s, 0.2s transform 0.4s, 0.2s -webkit-transform 0.4s;
+ }
+ .icon-mobile-menu.on span:nth-child(2) {
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: opacity 0.4s, visibility 0.4s;
+   transition: opacity 0.4s, visibility 0.4s;
+ }
+ .icon-mobile-menu.on span:nth-child(3) {
+   bottom: 50%;
+   margin-bottom: 0px;
+   -webkit-transform: rotate(-45deg);
+           transform: rotate(-45deg);
+   -webkit-transition: all 0.2s, 0.2s -webkit-transform 0.4s;
+   transition: all 0.2s, 0.2s -webkit-transform 0.4s;
+   transition: all 0.2s, 0.2s transform 0.4s;
+   transition: all 0.2s, 0.2s transform 0.4s, 0.2s -webkit-transform 0.4s;
+ }
+
+  /*  Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .home{   
+    height: 110vh;
+    min-height: 720px;     
+   }  
+  .home-text h1 {
+    font-size: 40px;      
+    line-height: 1.111;          
+  }  
+  .home-text p {
+    font-size: 15px;        
+  }
+  
+}
+
+/*  Большие девайсы (десктопы, >= 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .home{   
+    height: 130vh;     
+   }  
+  .home-text h1 {
+    font-size: 40px;      
+    line-height: 1.111;  
+    margin: 0 0 20px;        
+  }  
+  .home-text p {
+    font-size: 15px;  
+    line-height: 1.4;  
+    margin: 0 0 30px;
+  }
+  .btn-holders{
+    overflow: hidden;
+    display: none;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    position: relative;
+    text-decoration:none;
+    top: 31px;
+  }  
+  .menu{
+    width: 100%;
+    display:none;
+    height: auto;
+    position: fixed;    
+    top: 90px;     
+    padding: 10px 15px 10px 15px;
+     margin: 0 auto;  
+    background: linear-gradient(45deg, #1c80df 0%, #7cd1f5 80%, #7cd1f5 100%);    
+    overflow: hidden;  
+    right: 0px;
+    left: 100%;
+    max-width: 720px;
+    transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -webkit-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+  }
+  .menu ul{      
+    float: none;   
+    width: 100%;
+    right: 0px;
+    top:0px;
+    left: 0px;
+    margin: 0;
+  }
+  .menu li{
+    text-align: left;
+    float: none;    
+    margin: 0;    
+  }  
+  .menu li a{
+    margin: 5px 0px;
+    padding: 0px ;
+  }
+  .menu.show{
+    display: block;
+  }
+  .icon-mobile-menu{
+    display:block;
+    position: relative; 
+   }
+}
+
+/*  Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px)  { 
+  .home-text h1 {
+    font-size: 30px;      
+    line-height: 1;   
+    margin: 0 0 20px;        
+  }  
+  .home-text p {
+    font-size: 15px;
+    line-height: 1.55;  
+    margin: 0 0 30px;  
+  }
+  .home{
+    background-size: auto; 
+  }
+  .menu{
+    width: 100%;
+    display:block;
+    height: auto;
+    position: fixed;    
+    top: 90px;     
+    padding: 10px 15px 10px 15px;
+     margin: 0 auto;  
+    background: linear-gradient(45deg, #1c80df 0%, #7cd1f5 80%, #7cd1f5 100%);    
+    overflow: hidden;  
+    right: 0px;
+    left: 100%;
+    max-width: 540px;
+    transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -webkit-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+  }
+  .menu ul{      
+    float: none;   
+    width: 100%;
+    right: 0px;
+    top:0px;
+    left: 0px;
+    margin: 0;
+  }
+  .menu li{
+    text-align: left;
+    float: none;    
+    margin: 0;    
+  }  
+  .menu li a{
+    margin: 5px 0px;
+    padding: 0px ;
+  }
+  .menu.show{
+    display: block;
+  }
+  .btn-holders{ 
+    display: none;    
+  } 
+  .icon-mobile-menu{
+    display:block;
+    position: relative; 
+   }
+
+   .frame-content {   
+    max-width: 480px;
+    max-height: 320px;
+  }
+ 
+}
+
+/*  Малые девайсы («ландшафтные телефоны», >= 576px)*/
+@media (max-width: 575.98px)  { 
+  .home{   
+    height: 100vh;     
+   }   
+  .home{
+    background-size: auto; 
+  }
+  .home-text h1 {
+    font-size: 30px;      
+    line-height: 1; 
+    margin: 0 0 20px;          
+  }  
+  .home-text p {
+    font-size: 15px;
+    line-height: 1.55;
+    margin: 0 0 30px;      
+  }
+  .menu{
+    width: 100%;
+    display:block;
+    height: auto;
+    position: fixed;    
+    top: 90px;     
+    padding: 10px 15px 10px 15px;
+     margin: 0 auto;  
+    background: linear-gradient(45deg, #1c80df 0%, #7cd1f5 80%, #7cd1f5 100%);    
+    overflow: hidden;  
+    right: 0px;
+    left: 100%;
+    max-width: 540px;
+    transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -webkit-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+  }
+  .menu ul{      
+    float: none;   
+    width: 100%;
+    right: 0px;
+    top:0px;
+    left: 0px;
+    margin: 0;
+  }
+  .menu li{
+    text-align: left;
+    float: none;    
+    margin: 0;    
+  }  
+  .menu li a{
+    margin: 5px 0px;
+    padding: 0px ;
+  }
+  .btn-holders{ 
+    display: none;    
+  } 
+  .menu.show{
+    display: block;
+  }
+
+  .icon-mobile-menu{
+    display:block;
+    position: relative; 
+   }
+   .frame-content {   
+    max-width: 480px;
+    max-height: 320px;
+  }
+}
+
+/*  Экстрамалые девайсы («телефоны», < 576px)
+// Нет @media, т.к. это по умолчанию в Bootstrap

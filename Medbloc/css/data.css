@@ -1,0 +1,151 @@
+.data{
+  position: relative;
+  background: #fff;
+  padding-top: 92px;
+  padding-bottom: 52px;
+}
+.healthcare{
+  font-family: "Montserrat"; 
+  float: left;
+  width: 50%;
+  padding: 52px 47px 0 50px
+}
+.heading4{
+  position: relative;  
+  font-size: 24px;
+  line-height: 27px;
+  color: #515252;
+  margin: 0 0 26px;
+  font-weight: 700;
+}
+.heading4:after{
+ position: absolute;
+ content: attr(data-heading);
+ font-size: 24px;
+ line-height: 26px;
+ color: #cccccc;
+ left: -50px;
+ top: 0;
+}
+.healthcare p{
+ font-weight: 300;
+ color: #4c4c4c;
+ margin: 0 0 30px;
+ font-size: 17px;
+ line-height: 30px;
+}
+.btn-data{
+ display: inline-block;
+ vertical-align: middle;
+ font-family: 'Montserrat', sans-serif;;    
+ color: #515252; 
+ font-size: 15px;
+ line-height: 18px;
+ font-weight: 600;   
+ border-radius: 50px;  
+ margin: 0 18px 0 0;
+ border: 2px solid #d7d7d7;
+ background: #f7f7f7;
+ padding: 12px 24px;    
+ background: none; 
+ padding: 14px 38px;
+ letter-spacing: 3px;
+ transition:all 0.3s linear;
+ -moz-transition:all  0.3s  linear;
+ -webkit-transition:all 0.3s linear;
+ -o-transition:all  0.3s linear;
+}
+.btn-data:hover{     
+    background: #7af2ff;
+    border: 0px solid rgba(255, 255, 255, 0.5);
+    padding: 16px 40px;    
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
+    color: #fff; 
+    transition:all 0.3s linear;
+    -moz-transition:all  0.3s  linear;
+    -webkit-transition:all 0.3s linear;
+    -o-transition:all  0.3s linear;
+    text-decoration:none;
+  }
+  .img-data{     
+      width: 100%;
+      border-radius: 100%;
+      padding: 0 40px 0 40px;
+      height: auto;
+  } 
+
+  .img-holder{
+    font-family: "Montserrat"; 
+    float: left;
+    width: 50%;  
+    right: 40px;
+    position: relative;  
+  }
+
+  .content-holder,.content-holder:after{  
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .content-holder{
+    margin: 0 0 80px;   
+  }
+
+  /*  Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+}
+
+/*  Большие девайсы (десктопы, >= 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .healthcare{  
+    padding: 0px 47px 0 50px
+  }
+}
+
+/*  Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px)  { 
+  .img-holder{  
+    width: 100%;   
+    right: 0px;  
+    padding: 0px;
+  }
+  .healthcare{   
+    width: 100%;  
+    padding: 30px 0px 0 50px;
+  }
+  .btn-home{
+    text-align: center;
+  }
+  .content-holder{
+    margin: 0 0 30px;   
+  }
+  .img-data{       
+    padding: 0px;    
+  } 
+}
+
+/*  Малые девайсы («ландшафтные телефоны», >= 576px)*/
+@media (max-width: 575.98px)  { 
+  .img-holder{  
+    width: 100%;   
+    right: 0px;  
+    padding: 0px;
+  }
+  .healthcare{   
+    width: 100%;  
+    padding: 30px 0px 0 50px;
+  }
+  .btn-home{
+    text-align: center;
+  }
+  .content-holder{
+    margin: 0 0 30px;   
+  }
+  .img-data{       
+    padding: 0px;    
+  } 
+}
+
+/*  Экстрамалые девайсы («телефоны», < 576px)
+// Нет @media, т.к. это по умолчанию в Bootstrap
