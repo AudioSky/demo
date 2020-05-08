@@ -1,0 +1,272 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000fa;
+}
+
+/* стили для обёртки, в которой заключены слайды */
+.slider_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* стили для контейнера слайдов */
+.slider_items {
+  display: flex;
+  transition: transform 2s ease;
+}
+
+/* стили для слайдов */
+.slider_item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* стили для кнопок "вперед" и "назад" */
+.slider_control {
+  position: absolute;
+  top: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider_control_show {
+  display: flex;
+}
+
+.slider_control:hover,
+.slider_control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider_control_prev {
+  left: 0;
+}
+
+.slider_control_next {
+  right: 0;
+}
+
+.slider_control::before {
+  content: '';
+  display: inline-block;
+  
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+/*
+.slider_control_prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}*/
+
+.slider_control_prev::before {
+  font-family: 'icofont';
+  content: "\eab5"; 
+}
+/*
+.slider_control_next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+*/
+
+.slider_control_next::before {
+  font-family: 'icofont';
+  content: "\eab8"; 
+}
+
+/* стили для индикаторов */
+.slider_indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider_indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.slider_indicators li.active {
+  background-color: #fff;
+}
+
+.img-fluid {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  opacity: 0.52;
+}
+
+/* текст слайдов */
+.slideText {
+  position: absolute; 
+  color: #fff;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.slideText h3 {
+  font-size: 52px;
+  font-family: 'Raleway',sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+    font-weight: 200;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+.slideText h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  color: #fffefe;
+  text-align: center;
+  font-weight: 600;
+  margin: auto;
+  /*text-transform: uppercase;*/
+  letter-spacing: 3px;
+   margin-bottom: 24px; 
+}
+
+#textspan{
+  color:#00F1FF;
+}
+
+.slideText-g{
+  /* max-width: 500px;*/
+   margin: 0 auto;
+ }
+ .slideText-g  h4 {
+   font-size: 18px;
+   font-family: 'Raleway',sans-serif;
+   color:  rgba(255, 255, 255, 0.75);
+   text-align: center;
+    font-weight: 300;
+   line-height: 1.8;
+   letter-spacing: 1px;
+   padding: 0px 15% 0px 15%;
+}
+
+/*  Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .slideText h1{
+    font-size: 68px;
+   }
+   
+   .slideText h4{
+    font-size: 18px;
+   }
+
+   .slideText h3{
+    font-size: 52px;
+   }
+}
+
+/*  Большие девайсы (десктопы, >= 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .slideText h1{
+    font-size: 52px;
+    margin-bottom: 10px;
+  }
+      
+  .slideText h4{
+    font-size: 16px;
+   }
+
+   .slideText h3{
+    font-size: 42px;
+   }
+   
+}
+
+/*  Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px)  { 
+
+   .slideText h1{
+    font-size: 46px;
+    margin-bottom: 10px;
+   }
+     
+   .slideText h4{
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+   }
+
+   .slideText h3{
+    font-size: 36px;
+   }
+
+   .slideText-g  h4 {
+    padding: 0px 5% 0px 5%;
+   }
+}
+
+/*  Малые девайсы («ландшафтные телефоны», >= 576px)*/
+@media  (max-width: 575.98px)  { 
+ 
+   .slideText h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+   }
+   
+   .slideText h4{
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 20px;
+   }
+
+   .slideText h3{
+    font-size: 28px;
+   }  
+
+   .slideText-g  h4 {
+    padding: 0px 2% 0px 2%;
+   }
+}
+    
+/*  Экстрамалые девайсы («телефоны», < 576px)
+// Нет @media, т.к. это по умолчанию в Bootstrap
